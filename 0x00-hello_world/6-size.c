@@ -1,2 +1,20 @@
-#!/bin/bash
-gcc -E $CFILE -o c
+#include<stdio.h>
+/**
+ * main - This prints the size of various datatype
+ * Return: should return 0
+ */
+int main(void)
+{
+	int a;
+	float b;
+	char c;
+	long int d;
+	long long int e;
+
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	return (0);
+}
