@@ -1,2 +1,2 @@
 #!/bin/bash
-export $CFILE='gcc -E "main.c" -o "main.c"'
+export $CFILE='gcc -E "main.c"'
