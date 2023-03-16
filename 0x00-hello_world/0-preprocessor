@@ -1,2 +1,2 @@
 #!/bin/bash
-$CFILE = "gcc -E 'preprocessor.c' -o 'preprocessor.c'"
+export $CFILE = "gcc -E"
