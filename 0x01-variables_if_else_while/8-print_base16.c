@@ -8,10 +8,13 @@
   */
 int main(void)
 {
-	int x;
+	char l;
+	unsigned int a;
 
-	for (x = 0; x <= 9; x++)
-		putchar(x);
+	for (a = 0 ; a <= 9; a++)
+		putchar(a, stdout);
+	for (l = 'a'; l <= 'f'; l++)
+		putchar(l);
 	putchar('\n');
 	return (0);
 }
