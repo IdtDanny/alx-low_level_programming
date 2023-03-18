@@ -8,13 +8,16 @@
   */
 int main(void)
 {
-	char l;
-	unsigned int a;
+	int a;
 
-	for (a = 0 ; a <= 9; a++)
-		putchar(a, stdout);
-	for (l = 'a'; l <= 'f'; l++)
-		putchar(l);
+	for (a = 0; a <= 9; a++)
+	{
+		putchar(a + 48);
+	} /* Prints 0 to 9 */
+	for (a = 0; a <= 5; a++)
+	{
+		putchar(a + 97);
+	} /* Prints a to f */
 	putchar('\n');
 	return (0);
 }
