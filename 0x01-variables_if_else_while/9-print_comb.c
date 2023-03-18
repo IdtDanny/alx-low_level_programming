@@ -13,9 +13,11 @@ int main(void)
 
 	space = 32; /* According to ASCII Table */
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		putchar(i + 48); /* ASCII Table ref for 0-9 (48-57) */
+		if (i == 9)
+			continue;
 		putchar(space);
 		putchar(',');
 	}
