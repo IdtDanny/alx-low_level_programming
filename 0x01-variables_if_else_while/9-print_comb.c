@@ -18,8 +18,8 @@ int main(void)
 		putchar(i + 48); /* ASCII Table ref for 0-9 (48-57) */
 		if (i == 9)
 			continue;
-		putchar(space);
 		putchar(',');
+		putchar(space);
 	}
 	putchar('\n');
 	return (0);
