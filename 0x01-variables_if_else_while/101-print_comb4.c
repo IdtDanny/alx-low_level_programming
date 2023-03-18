@@ -8,10 +8,7 @@
   */
 int main(void)
 {
-	int x;
-	int y;
-	int z;
-	int space;
+	int x, y, z, space;
 
 	space = 32; /* According to ASCII Table */
 
@@ -22,16 +19,16 @@ int main(void)
 			for (z = 0; z <= 9; z++)
 			{
 			if (x != y && x != z && y != z && x < y && y < z)
+			{
+				putchar(x + 48);
+				putchar(y + 48);
+				putchar(z + 48);
+				if (x != 7 && x + z != 17)
 				{
-					putchar(x + 48);
-					putchar(y + 48);
-					putchar(z + 48);
-					if (x != 7 && x + z != 17)
-					{ 
-						putchar(',');
-						putchar(space);
-					}
+					putchar(',');
+					putchar(space);
 				}
+			}
 			}
 		}
 	}
