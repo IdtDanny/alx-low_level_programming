@@ -8,11 +8,14 @@
   */
 int main(void)
 {
-	int x;
+	int i;
 
-	for (x = 0; x <= 9; x++)
+	i = 0;
+
+	while (i <= 9)
 	{
-		putchar(x);
+		putchar(i + 48); /* ASCII Table ref for 0-9 (48-57) */
+		i++;
 	}
 	putchar('\n');
 	return (0);
