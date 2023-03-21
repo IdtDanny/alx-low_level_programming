@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * print_alphabet - prints all alphabets in small letter
+  * print_alphabet_x10 - prints all alphabets in small letter
   * Return: 0
   */
 void print_alphabet_x10(void)
