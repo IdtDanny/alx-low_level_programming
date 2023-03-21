@@ -14,21 +14,24 @@ void times_table(void)
 		for (y = 0; y <= 9; y++)
 		{
 			mul = x * y;
-			if (mul >= 10)
+			if (mul > 9)
 			{
-				i = mul / 10;
-				k = mul % 10;
-				_putchar(i + '0');
-				_putchar(k + '0');
+				i = mul % 10;
+				k = (mul - i) / 10;
 				_putchar(',');
 				_putchar(' ');
+				_putchar(k + '0');
+				_putchar(i + '0');
 			}
 			else
 			{
-				_putchar(x * y + '0');
-				_putchar(',');
-				_putchar(32);
-				_putchar(32);
+				if (y != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				_putchar(mul + '0');
 			}
 		}
 		_putchar('\n');
