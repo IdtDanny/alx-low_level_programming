@@ -6,7 +6,8 @@
   */
 int main(void)
 {
-	int x, y, z;
+	int x;
+	long int y, z;
 
 	y = 1;
 	z = 2;
@@ -15,17 +16,17 @@ int main(void)
 	{
 		if (x == 0)
 		{
-			printf("%d", y);
+			printf("%ld", y);
 		}
 		else if (x == 1)
 		{
-			printf(", %d", z);
+			printf(", %ld", z);
 		}
 		else
 		{
 			z = z + y; /* Adding first two numbers */
 			y = z - y; /* finding number before */
-			printf(", %d", z);
+			printf(", %ld", z);
 		}
 	}
 	printf("\n");
