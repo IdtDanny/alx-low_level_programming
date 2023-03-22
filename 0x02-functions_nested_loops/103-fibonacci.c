@@ -20,8 +20,8 @@ int main(void)
 		if (z % 2 == 0)
 		{
 			sum = sum + z;
-			y = z - y;
 		}
+		y = z - y;
 		++x;
 	}
 	printf(", %ld\n", sum);
