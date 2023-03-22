@@ -24,6 +24,6 @@ int main(void)
 		y = z - y;
 		++x;
 	}
-	printf(", %ld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
