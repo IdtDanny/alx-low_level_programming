@@ -12,17 +12,12 @@ void more_numbers(void)
 	{
 		for (y = 0; y <= 14; y++)
 		{
+			l = y % 10; /* Last digit */
+			f = 1; /* First digit for those >= 10 */
+
 			if (y > 9)
-			{
-				f = y / 10;
-				l = y % 10;
 				_putchar(f + 48);
-				_putchar(l + 48);
-			}
-			else
-			{
-				_putchar(y + 48);
-			}
+			_putchar(l + 48);
 		}
 		_putchar('\n');
 	}
