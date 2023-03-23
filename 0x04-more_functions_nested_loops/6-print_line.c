@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * print_line - prints line instead of number
-  *
+  * @n: parameters to be passed
   * Return: does not return anything
   */
 void print_line(int n)
