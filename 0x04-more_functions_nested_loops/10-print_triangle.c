@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * print_diagonal - prints line instead of number
+  * print_triangle - prints triangle
   * @size: parameters to be passed
   * Return: does not return anything
   */
