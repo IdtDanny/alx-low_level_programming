@@ -1,22 +1,22 @@
 #include "main.h"
 /**
-  * print_diagonal - prints line instead of number
-  * @n: parameters to be passed
+  * print_square - prints hachtag
+  * @size: parameters to be passed
   * Return: does not return anything
   */
-void print_diagonal(int n)
+void print_square(int size)
 {
 	int x, y;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (x = 1; x <= n; x++)
+		for (x = 1; x <= size; x++)
 		{
-			for (y = 1; y <= n; y++)
+			for (y = 1; y <= size; y++)
 			{
 				_putchar(35);
 			}
