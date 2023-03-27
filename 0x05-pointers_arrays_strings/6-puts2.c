@@ -8,7 +8,7 @@
   */
 void puts2(char *str)
 {
-	int x, y;
+	int x;
 
 	x = 0;
 	while (*str != '\0')
