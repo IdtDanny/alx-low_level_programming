@@ -20,7 +20,8 @@ int _sqrt_recursion(int n)
 /**
   * find_sqrt - recurses to find natural square root value of x
   *
-  * @n: number to find square root for
+  * @x: number to calculate square root for
+  * @key: iteration
   *
   * Return: the square root of n
   */
