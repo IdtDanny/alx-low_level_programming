@@ -1,23 +1,38 @@
 #include "main.h"
+
+int find_sqrt(int x, int key);
 /**
   * _sqrt_recursion - returns natural square root value
   *
-  * @n: power number
+  * @n: number to find square root for
   *
   * Return: the square root of n
   */
 int _sqrt_recursion(int n)
 {
-	if (y < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	else if (y == 1)
+	return (find_sqrt(n, 0));
+}
+
+/**
+  * find_sqrt - recurses to find natural square root value of x
+  *
+  * @n: number to find square root for
+  *
+  * Return: the square root of n
+  */
+int find_sqrt(int x, int key)
+{
+	if (key * key > x)
 	{
-		return (x);
+		return (-1);
 	}
-	else
+	if (key * key == x)
 	{
-		return (x * _pow_recursion(x, y - 1));
+		return (key);
 	}
+	return (find_sqrt(x, key + 1));
 }
