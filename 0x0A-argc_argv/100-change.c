@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	else if (argc == 2)
 	{
 		cent = atoi(argv[1]);
-		printf("%d\n", cent);
+		/* printf("%d\n", cent); */
 		if (cent < 0)
 		{
 			printf("0\n");
@@ -53,9 +53,9 @@ int main(int argc, char *argv[])
 				else if (rem == 2)
 					printf("%d\n", count++);
 				else if (rem == 3)
-					printf("%d\n", count+2);
+					printf("%d\n", count + 2);
 				else if (rem == 4)
-					printf("%d\n", count+2);
+					printf("%d\n", count + 2);
 			}
 			else if (cent > 5 && cent < 10)
 				printf("%d\n", ((cent / 5) + (cent % 5)));
