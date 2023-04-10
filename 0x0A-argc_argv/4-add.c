@@ -2,45 +2,58 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include "main.h"
 /**
-  * main -  adds positive numbers.
-  *
-  * @argc: argument count
-  *
-  * @argv: argument string passed
-  *
-  * Return: always 0
-  */
+ * check_num - check if there are digit in string
+ *
+ * @str: array str
+ *
+ * Return: Always 0 (Success)
+ */
+int check_num(char *str)
+{
+	unsigned int x;
+
+	x = 0;
+	while (x < strlen(str))
+	{
+		if (!isdigit(str[x])) /*check if str there are digit*/
+		{
+			return (0);
+		}
+		x++;
+	}
+	return (1);
+}
+/**
+ * main - Print the name of the program
+ *
+ * @argc: Count arguments
+ *
+ * @argv: Arguments
+ *
+ * Return: Always 0 (Success)
+ */
 int main(int argc, char *argv[])
 {
-	int i, num, add;
+	int x;
+	int str_to_int;
+	int sum = 0;
 
-	add = 0;
-	if (argc == 1)
+	x = 1;
+	while (x < argc)
 	{
-		printf("0\n");
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		if (check_num(argv[x]))
 		{
-			num = atoi(argv[i]);
-			if (num == 0)
-			{
-				printf("Error\n");
-				add = num;
-				break;
-			}
-			else
-			{
-				add += atoi(argv[i]);
-			}
+			str_to_int = atoi(argv[x]);
+			sum += str_to_int;
 		}
-		if (add != 0)
+		else
 		{
-			printf("%d\n", add);
+			printf("Error\n");
+			return (1);
 		}
+		x++;
 	}
+	printf("%d\n", sum); /*print sum*/
 	return (0);
 }
