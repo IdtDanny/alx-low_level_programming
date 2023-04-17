@@ -1,5 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include <stdib.h>
 #include "dog.h"
 /**
  * print_dog - print_dog struct dog.
