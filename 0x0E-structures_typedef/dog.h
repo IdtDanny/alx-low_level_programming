@@ -36,4 +36,8 @@ typedef struct dog_t
  * dog_t *new_dog - initialize new dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner);
+/*
+ * free_dog - frees dog.
+ */
+void free_dog(dog_t *d);
 #endif
