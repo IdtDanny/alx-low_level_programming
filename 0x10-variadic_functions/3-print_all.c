@@ -7,11 +7,11 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0;
+	int i;
 	char *str, *sep = "";
-	
 	va_list list;
-	
+
+	i = 0;
 	va_start(list, format);
 	if (format)
 	{
@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 's':
-					str = va_arg(list, char *);					
+					str = va_arg(list, char *);
 					if (!str)
 						str = "(nil)";
 					printf("%s%s", sep, str);
@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 			}
 			sep = ", ";
 			i++;
-		}		
+		}
 	}
 	printf("\n");
 	va_end(list);
